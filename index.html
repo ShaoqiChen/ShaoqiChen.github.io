@@ -6,9 +6,10 @@ title: Home
 <body>
 	<nav>
 		<ul>
-		  {% for item in site.data.navigation %}
-		  <li><a class="{% if page.url == item.link %}active{% endif %}" href="{{item.link}}">{{item.title}}</a></li>
-		  {% endfor %}
+
+		  <li><a href="/">Home</a></li>
+		  <li><a href="/about.html">About</a></li>
+
 		</ul>
 	</nav>
 </body>
