@@ -5,7 +5,15 @@
     <title>{{ page.title }}</title>
   </head>
   <body>
-    {% include navigation.html %}
+    <nav>
+      <ul>
+        {% for item in site.data.navigation %}
+        <li><a class="{% if page.url == item.link %}active{% endif %}" href="{{item.link}}">{{item.title}}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    
     {{ content }}
   </body>
 </html>
