@@ -3,3 +3,12 @@ layout: default
 title: Home
 ---
 <h1>{{ "Hello World!" | downcase }}</h1>
+<body>
+	<nav>
+		<ul>
+		  {% for item in site.data.navigation %}
+		  <li><a class="{% if page.url == item.link %}active{% endif %}" href="{{item.link}}">{{item.title}}</a></li>
+		  {% endfor %}
+		</ul>
+	</nav>
+</body>
