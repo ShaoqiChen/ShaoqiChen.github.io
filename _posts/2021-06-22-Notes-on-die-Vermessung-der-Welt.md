@@ -2,7 +2,8 @@
 layout: post
 author: Shaoqi
 title: Notes on Die Vermessung der Welt
-tag: Book
+tag: book
+category: Book Review
 ---
 
 These are my highlights in the book *[Die Vermessung der Welt](https://de.wikipedia.org/wiki/Die_Vermessung_der_Welt)* by Daniel Kehlmann. It is a great book where reader can easily find the real passion about knowledge and the exploration of the potential knowledge in every page. 
