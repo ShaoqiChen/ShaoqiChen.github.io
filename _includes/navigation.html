@@ -5,22 +5,32 @@
     </a>
   {% endfor %}
 </nav>
+<nav>
+	<ul>
+
+	  <li><a href="/" {% if page.url == '/' %}style="color: red;"{% endif %}>Home</a></li>
+	  <li><a href="/about.html" {% if page.url == '/about.html' %}style="color: red;"{% endif %}>About</a></li>
+	  <li><a href="/blog.html" {% if page.url == '/blog.html' %}style="color: red;"{% endif %}>Blog</a></li>
+
+	</ul>
+</nav>
+
 <style>
-		nav ul {
-		  display: flex;
-		  list-style: none;
-		}
-		nav ul li {
-		  margin-right: 10px;
-		}
-		nav ul li a {
-		  text-decoration: none;
-		  color: green;
-		}
-		nav ul li a:hover {
-		  text-decoration: underline;
-		}
-		.active {
-		  text-decoration: underline;
-		}
-	</style>
+	nav ul {
+	  display: flex;
+	  list-style: none;
+	}
+	nav ul li {
+	  margin-right: 10px;
+	}
+	nav ul li a {
+	  text-decoration: none;
+	  color: green;
+	}
+	nav ul li a:hover {
+	  text-decoration: underline;
+	}
+	.active {
+	  text-decoration: underline;
+	}
+</style>
